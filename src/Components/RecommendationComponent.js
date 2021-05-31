@@ -1,8 +1,11 @@
+import CardContent from './CardContent';
 const Recommendation = () => {
     return(
       <>
         <div className="">
-        Recommendation
+            <h3>More From The Siren</h3>
+            <hr></hr>
+            <CardContent />
         </div>
       </>
     );

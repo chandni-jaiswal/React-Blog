@@ -1,0 +1,33 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.centered {
+    position: absolute;
+    top: 65%;
+    left: 22%;
+    color: white;
+    transform: translate(-20%, -40%);
+    font-size: xx-large;
+  }
+.grid-container div{
+    border-radius: 2%;
+}
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 2%;
+}
+img{
+    border-radius: 2%;
+}
+.travel-date{
+    font-size: small;
+}
