@@ -1,4 +1,5 @@
 import '../styles/header.css'
+import ArticleMainContent from './ArticleMainContent'
 const Header = () => {
     return(
       <>
@@ -6,6 +7,7 @@ const Header = () => {
             <div><img src='./images/blog-image.PNG' alt="" /></div>
             <button>Get started</button>
         </div>
+        <ArticleMainContent />
       </>
     );
   };

@@ -1,13 +1,28 @@
 .text{
     position: relative;
   }
-      
   .text::after {
     content: "";
     position: absolute;
     border-top: 2px solid rgba(255, 0, 0, 0.452);
     left: 3px;
     bottom: 0;
-    width: 4%;
+    width: 15%;
     height: 0px;
   }
+  .card-container{
+    width: 30%;
+  }
+  .cards{
+    width: 30%;
+  }
+
+@media screen and (max-width:800px){
+  .cards{
+    width: 100%;
+    justify-content: center;
+  }
+  .img-grid{
+    margin-left: 5%;
+  }
+}

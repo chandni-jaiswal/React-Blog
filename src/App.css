@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.App-Container{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media screen and (max-width:800px){
+  .App-Container{
+    margin-left: 0%;
+  margin-right: 0%;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

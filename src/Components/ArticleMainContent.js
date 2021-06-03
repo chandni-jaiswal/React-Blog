@@ -1,17 +1,21 @@
 import ArticleContent from './ArticleContent';
+import Recommendation from './RecommendationComponent';
+import '../styles/articleMainContent.css'
 function ArticleMainContent(){
     return(
         <>  
-            <div style={{width:"30%",position:"fixed",top:"100px",left:"150px"}}>
-                <img src="./images/stickyImage.PNG"></img>
+            <div class="social-img">
+                <div><img src="./images/hands.png" alt=""></img>&nbsp;&nbsp;&nbsp;<span>9.3k</span></div>
+                <div><img src="./images/share.png" alt=""></img>&nbsp;&nbsp;&nbsp;<span>Share this article</span></div>
             </div>
-            <div style={{width:"100%",marginLeft:"300px"}}>
-                <div style={{width:"40%"}}>
+            <div class="Top-heading">
+                <div class="heading2">
                     <ArticleContent />
                 </div>
-                <div style={{width:"30%"}}>
+                <div class="empty-space">
                 </div>
             </div>  
+            <Recommendation />
         </>
     )
 }

@@ -1,27 +1,26 @@
-import {Route} from 'react-router-dom'
-import Header from './Components/HeaderComponent';
-import Footer from './Components/BlogFooter';
-import LatestStories from './Components/LatestStories';
-import ArticleMainContent from './Components/ArticleMainContent';
-import header from './Components/header';
-import ArticleComponent from './Components/ArticleComponent';
-import Recommendation from './Components/RecommendationComponent';
-import Card from './Components/CardComponent';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import HeaderComponent from './Components/HeaderComponent';
+import MainHeaderComponent from './Components/MainHeaderComponent';
+import Bollywood from './Components/Bollywood';
 import './App.css'
+import Header from './Components/header';
 const App = () => {
   return(
     <>
-        <div style={{marginRight:"10%",marginLeft:"10%"}}>
-        <Route path="/" component={Header} exact />
-        <Route path="/" component={Card} exact /> 
-        <Route path="/" component={ArticleComponent} exact />        
-        <Route path="/" component={LatestStories} exact />
-        <Route path="/" component={header} exact />
-        <Route path="/" component={ArticleMainContent} exact />
-        <Route path="/" component={Recommendation} exact />
-        <Route path="/footer" component={Footer} exact />
-        
-        </div>
+    <BrowserRouter>
+        <Switch>
+          <div class="App-Container"> 
+            <Route path="/" component={HeaderComponent} exact />
+            <Route path="/home" component={HeaderComponent} exact />
+            <Route path="/technology" component={Header} exact />
+            <Route path="/hollywood" component={HeaderComponent} exact />
+            <Route path="/fitness" component={HeaderComponent} exact />
+            <Route path="/food" component={HeaderComponent} exact />
+            <Route path="/bollywood" component={MainHeaderComponent} exact />
+            <Route path="/bollywood" component={Bollywood} exact />
+          </div> 
+        </Switch>
+      </BrowserRouter>
     </>
   );
 };

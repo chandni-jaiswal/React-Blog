@@ -1,11 +1,11 @@
+
 .card-container{
-    width: 100%;
-    display : flex;
+    display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .card1{
     width: 25%;
-    text-align: justify;
 }
 .card2{
     width: 25%;
@@ -16,4 +16,18 @@
 .border{
     border-right: 2px solid rgba(128, 128, 128, 0.308);
     margin-top: 4%;
+}
+@media screen and (max-width:800px){
+.card-container{
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+}
+.card1,.card2, .card3{
+    width: 96%;
+    align-items: center;
+}
+.border{
+    display: none;
+}
 }

@@ -1,0 +1,25 @@
+.social-image{
+    color: cadetblue;
+
+}
+.travel-date{
+    margin-bottom: 2%;
+}
+.authorDetails{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width:800px){
+    .authorDetails{
+        display:flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .social-image{
+        color: cadetblue;
+        width: 100%;
+        margin-left: 2%;
+    }
+}

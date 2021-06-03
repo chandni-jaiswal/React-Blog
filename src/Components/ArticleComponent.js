@@ -1,52 +1,53 @@
+import '../styles/articleComponent.css'
 const ArticleComponent = () => {
     return(
       <>
-        <div className="">
+        <div className="article-maingrid">
           <div style={{marginTop:"5%"}}>
             <div>
                 <h2 className="text">Latest Article</h2>
             </div>
-            <div style={{display:"flex"}}>
+            <div className="article-grid">
               <div>
-                <div style={{display:"flex",borderTop:"2px solid grey", margin:"10px"}}>
-                  <div style={{margin:"15px"}}>
-                    <img src="./images/LatestArticle.PNG" alt="" height="180px"></img>
+                <div className="article-subgrid">
+                  <div>
+                    <img src="./images/LatestArticle.PNG" alt="" className="image"></img>
                   </div>
-                  <div style={{width:"35%"}}>
+                  <div className="article-subgrid1">
                     <h2>Catch waves with an adventure guide</h2> 
                     <p>Gujrat is underrated and it's a quite mystry to us why it is not known as a tourist destination.
                         It is a plathora of temples and places.</p>  
                     <p className="travel-date"><span style={{fontWeight:"bold"}}>TECH </span>/ Today AT 11:54</p> 
                   </div>
                 </div>
-                <div style={{display:"flex", borderTop:"2px solid grey", margin:"10px"}}>
-                  <div style={{margin:"15px"}}>
-                    <img src="./images/LatestArticle.PNG" alt="" height="180px"></img>
+                <div className="article-subgrid">
+                  <div>
+                    <img src="./images/LatestArticle.PNG" alt="" className="image"></img>
                   </div>
-                  <div style={{width:"35%"}}>
-                    <h2>Catch waves with an adventure guide</h2> 
+                  <div className="article-subgrid1">
+                    <h3>Catch waves with an adventure guide</h3> 
                     <p>Gujrat is underrated and it's a quite mystry to us why it is not known as a tourist destination.
                         It is a plathora of temples and places.</p>  
                     <p className="travel-date"><span style={{fontWeight:"bold"}}>TECH </span>/ Today AT 11:54</p> 
                   </div>
                 </div>
-                <div style={{display:"flex", borderTop:"2px solid grey", margin:"10px"}}>
-                  <div style={{margin:"15px"}}>
-                    <img src="./images/LatestArticle.PNG" alt="" height="180px"></img>
+                <div className="article-subgrid">
+                  <div>
+                    <img src="./images/LatestArticle.PNG" alt="" className="image"></img>
                   </div>
-                  <div style={{width:"35%"}}>
-                    <h2>Catch waves with an adventure guide</h2> 
+                  <div className="article-subgrid1">
+                    <h3>Catch waves with an adventure guide</h3> 
                     <p>Gujrat is underrated and it's a quite mystry to us why it is not known as a tourist destination.
                         It is a plathora of temples and places.</p>  
                     <p className="travel-date"><span style={{fontWeight:"bold"}}>TECH </span>/ Today AT 11:54</p> 
                   </div>
                 </div>
-                <div style={{display:"flex", borderTop:"2px solid grey", margin:"10px"}}>
-                  <div style={{margin:"15px"}}>
-                    <img src="./images/LatestArticle.PNG" alt="" height="180px"></img>
+                <div className="article-subgrid">
+                  <div>
+                    <img src="./images/LatestArticle.PNG" alt="" className="image"></img>
                   </div>
-                  <div style={{width:"35%"}}>
-                    <h2>Catch waves with an adventure guide</h2> 
+                  <div className="article-subgrid1">
+                    <h3>Catch waves with an adventure guide</h3> 
                     <p>Gujrat is underrated and it's a quite mystry to us why it is not known as a tourist destination.
                         It is a plathora of temples and places.</p>  
                     <p className="travel-date"><span style={{fontWeight:"bold"}}>TECH </span>/ Today AT 11:54</p> 
@@ -64,7 +65,7 @@ const ArticleComponent = () => {
               </div>
               <div>
                 <div>
-                  <img src="./images/Advertisement.PNG" alt="" width="300px" height="680px">
+                  <img src="./images/Advertisement.PNG" alt="" width="300px" height="680px" class="add">
                   </img>
                   <h2 className="text">Top Posts</h2>
                   <img src="./images/cloudPost.PNG" alt="" width="300px" height="200px">
@@ -74,7 +75,7 @@ const ArticleComponent = () => {
                       <h3>Catch waves with an adventure guide</h3>
                       <p className="travel-date">Travel/ August 21 2017</p>
                     </div>
-                    <div style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
+                    <div class="number" style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
                        1
                      </div>
                   </div>
@@ -87,7 +88,7 @@ const ArticleComponent = () => {
                       <h3>Catch waves with adventure guide</h3>
                       <p className="travel-date">Travel/ August 21 2017</p>
                      </div>
-                     <div style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
+                     <div class="number" style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
                        2
                      </div>
                   </div>
@@ -100,7 +101,7 @@ const ArticleComponent = () => {
                       <h3>Catch waves with adventure guide</h3>
                       <p className="travel-date">Travel/ August 21 2017</p>
                      </div>
-                     <div style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
+                     <div class="number" style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
                        3
                      </div>
                   </div>
@@ -113,11 +114,10 @@ const ArticleComponent = () => {
                       <h3>Catch waves with adventure guide</h3>
                       <p className="travel-date">Travel/ August 21 2017</p>
                     </div>
-                    <div style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
+                    <div class="number" style={{fontSize:"40px", fontWeight:"bolder", color:"grey"}}>
                        4
                      </div>
                   </div>
-                  <hr></hr>
                 </div>
               </div>
             </div>

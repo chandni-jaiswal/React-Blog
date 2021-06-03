@@ -1,0 +1,43 @@
+.article-maingrid{
+    margin-bottom: -90px;
+}
+.article-grid{
+    display: flex;
+}
+.image{
+    margin:15px;
+}
+.article-subgrid{
+    display: flex;
+    border-top:2px solid grey ;
+    margin:10px;
+}
+.article-subgrid1{
+    width: 35%;
+}
+@media screen and (max-width:800px){
+    .article-grid{
+        display: block;
+    }
+    .article-subgrid{
+        display: flex;
+    }
+    .article-subgrid1{
+        width: 60%;
+        font-size: 0.7em;
+        display: block;
+    }
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+    .grid-item1{
+        display: none;
+    }
+    .add{
+        display: none;
+    }
+    .article-maingrid{
+        margin-bottom: -2px;
+    }
+}

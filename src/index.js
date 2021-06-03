@@ -8,6 +8,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
+    <script src="https://kit.fontawesome.com/d65e853b8d.js" crossorigin="anonymous"></script>
   </>,
   document.getElementById('root')
 );

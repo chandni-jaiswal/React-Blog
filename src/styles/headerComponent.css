@@ -1,28 +1,35 @@
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    padding: 10px; 
+    grid-template-columns: 67% auto;
+    grid-template-rows: 200px 200px;
+    grid-gap: 1%;
+    padding-top: 2%;
     box-sizing: border-box;
+}
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 2%;
+    overflow: hidden;
 }
 .centered {
     position: absolute;
-    top: 65%;
-    left: 22%;
+    bottom: 5%;
+    left: 20%;
     color: white;
     transform: translate(-20%, -40%);
     font-size: xx-large;
   }
+  .centered1 {
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    font-size: large;
+    color: white;
+  }
 .grid-container div{
-    border-radius: 2%;
-}
-.grid-item1{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
     border-radius: 2%;
 }
 img{
@@ -31,3 +38,25 @@ img{
 .travel-date{
     font-size: small;
 }
+@media screen and (max-width:800px){
+    .grid-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90% auto;
+        grid-template-rows: 300px;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+    .grid-item1, .grid-item2{
+        display: none;
+    }
+    .centered {
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+        color: black;
+        transform: translate(-20%, -40%);
+        font-size: xx-large;
+      }
+}
+
