@@ -2,41 +2,21 @@
     display: grid;
     grid-template-columns: 70% auto;
 }
-.top-post{
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-.image-grid{
-    position: relative;
-    border: 1px solid black;
-    height: 120vh;
-    width: auto;
-    padding:60%;
-    text-align: center;
-}
 
-.adds{
-    position:absolute;
-    left:37%;
-    top:45%;
-}
 .text1{
     position: relative;
+    font-size: xx-large;
+    font-weight: 700;
   }
       
   .text1::after {
     content: "";
     position: absolute;
-    border-top: 2px solid rgba(255, 0, 0, 0.452);
+    border-top: 4px solid rgba(255, 0, 0, 0.452);
     left: 3px;
     bottom: 0;
-    width: 50px;
+    width: 70px;
     height: 0px;
-  }
-  .number{
-    font-size:40px;
-     font-weight:bolder;
-      color:grey;
   }
   @media screen and (max-width:800px){
     .main-container{
